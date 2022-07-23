@@ -1,5 +1,5 @@
 export const environment = {
-  urlAPI: "https://servicios-publicos.herokuapp.com",
+  urlAPI: "https://servicios-publicos.herokuapp.com/api",
   production: true,
   /* WEB PUSH */
   publicKey: "BJWNXd4q7vpwgCavmoSRvGKdsXkRM1HzoAigV-Je2sk31mMO8nCFOXqmmqI54wmDi3-8vaG4BToNiDNYrNgTt3w",
