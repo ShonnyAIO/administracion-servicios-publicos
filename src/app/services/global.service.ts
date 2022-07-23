@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -22,7 +21,11 @@ export class GlobalService {
   }
 
   session() {
-    return String(localStorage.getItem('session'))
+    return String(localStorage.getItem('token'))
+  }
+
+  getApiKey() {
+    return String(localStorage.getItem('api_key'));
   }
 
   logout() {

@@ -2,29 +2,31 @@
   <mat-toolbar-row>
     <div class="row between-xs middle-xs">
       <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 lg_header_box">
-        <div class="box" *ngIf="activateDemoAuth">
+        <div class="box" *ngIf="!activateDemoAuth">
           <button mat-icon-button aria-label="Menú de Acciones Komerzio" (click)="openDialog()">
             <mat-icon>menu</mat-icon>
           </button>
         </div>
       </div>
-      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 center-xs ">
-        <div class="box">
-          <!-- <img src="#" class="logo-header" alt="Komerzio logo"> -->
-        </div>
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 end-xs lg_header_box" *ngIf="activateDemoAuth;else authUser">
       </div>
-      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 end-xs lg_header_box" *ngIf="!activateDemoAuth;else authUser">
-        <!-- <div class="box">
-          <button mat-flat-button class="action-btn" (click)="goToRegister()">Registrarme</button>
-        </div> -->
-      </div>
-
     </div>
   </mat-toolbar-row>
 </mat-toolbar>
 <!-- FALTA EL LAYOUT CUANDO HACEN LOGIN -->
 
 <ng-template #authUser>
+  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 center-xs ">
+    <div class="box">
+      <button mat-flat-button class="action-btn" (click)="subscribeToNotifications()">Habilitar
+        Recordatorio</button>
+    </div>
+  </div>
+  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 center-xs ">
+    <div class="box" *ngIf="respuesta">
+      <p>Por favor avisar al admin de estas credenciales: {{ respuesta | json }}</p>
+    </div>
+  </div>
   <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 end-xs">
     <div class="row middle-xs end-xs">
       <div class="col-md-10 col-lg-10 user-info">

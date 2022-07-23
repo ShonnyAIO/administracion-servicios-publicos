@@ -5,7 +5,6 @@ import { Router } from '@angular/router';
 
 
 interface Assets {
-  assetLogo: string,
   assetIsoLogo: string
 }
 
@@ -25,7 +24,6 @@ export class SideBarComponent implements OnInit {
   userOnline: any;
 
   assets: Assets = {
-    assetLogo: 'https://firebasestorage.googleapis.com/v0/b/kenzi-dev-version.appspot.com/o/assets%2Fimages%2Fkomerzio-logo.png?alt=media&token=068dbba6-5a25-49ac-8180-1b0224b54f75',
     assetIsoLogo: './../../../../assets/icons/icon-512x512.png'
   }
 
@@ -50,6 +48,8 @@ export class SideBarComponent implements OnInit {
   }
 
   closedDialog() {
+    this.global.logout();
+    this.router.navigateByUrl('/login');
     this.dialog.closeAll();
   }
 

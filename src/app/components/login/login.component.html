@@ -1,0 +1,28 @@
+<app-header> </app-header>
+<div class="container">
+    <div class="row center-xs separate">
+        <form [formGroup]="formLogin" (ngSubmit)="loginAccount()">
+            <div class="col-md-12 col-xs-12">
+
+                <h2 class="text-primary">Iniciar Sesion</h2>
+
+                <mat-form-field class="komerzio-full-width" appearance="fill">
+                    <mat-label>Correo Electronico</mat-label>
+                    <input type="text" formControlName="email" matInput>
+                    <mat-error *ngIf="formLogin.invalid">{{getErrorMessage('email')}}</mat-error>
+                </mat-form-field>
+
+                <mat-form-field class="komerzio-full-width" appearance="fill">
+                    <mat-label>Password</mat-label>
+                    <input type="password" formControlName="password" matInput>
+                    <mat-error *ngIf="formLogin.invalid">{{getErrorMessage('password')}}</mat-error>
+                </mat-form-field>
+
+
+                <button type="submit" class="button-primary" mat-flat-button [disabled]="!formLogin.valid">
+                    Iniciar Sesion
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

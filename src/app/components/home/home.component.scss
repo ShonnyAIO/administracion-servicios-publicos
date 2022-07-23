@@ -1,0 +1,41 @@
+@import '../../../assets/css/toolbars';
+
+.cantv {
+    background-color: #005DA4;
+}
+
+.separate {
+    margin-top: 20px;
+}
+
+.corpoelec {
+    background-color: #C31A1A;
+}
+
+.condominio-saenz {
+    background-color: #1CA1DF;
+}
+
+.condominio-saenz,
+.cantv,
+.corpoelec,
+.text-primary {
+    color: #fff;
+}
+
+.text-price {
+    font-size: 18px;
+    background-color: #00AF1D;
+}
+
+.text-date {
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: -23px;
+}
+
+.image-logo {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

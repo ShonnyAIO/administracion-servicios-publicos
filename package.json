@@ -1,5 +1,5 @@
 {
-  "name": "finanzas-personales",
+  "name": "services-notification",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",
     "@angular/service-worker": "~13.1.0",
+    "@schematics/angular": "^14.0.0",
     "angular-http-server": "^1.10.0",
     "date-fns": "^2.28.0",
     "date-fns-tz": "^1.2.2",

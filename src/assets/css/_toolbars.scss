@@ -1,11 +1,11 @@
-@import "./colores";
+@import './colores';
 
-/* Configuraciones de Dashboard */
 .mat-toolbar {
     background: $background-toolbar;
     padding: 15px;
     border-radius: 10px;
     line-height: 0;
+    height: 90%;
 
     .row {
         width: 100%;
@@ -16,7 +16,7 @@
     }
 }
 
-.presentation {
-    height: 30%;
-    margin-top: 10px;
+.separate {
+    height: 100%;
+    margin-top: 250px;
 }

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "finanzas-personales": {
+    "servicios-notifications-front": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/finanzas-personales",
+            "outputPath": "dist/servicios-notifications-front",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -83,10 +83,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "finanzas-personales:build:production"
+              "browserTarget": "servicios-notifications-front:build:production"
             },
             "development": {
-              "browserTarget": "finanzas-personales:build:development"
+              "browserTarget": "servicios-notifications-front:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -94,7 +94,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "finanzas-personales:build"
+            "browserTarget": "servicios-notifications-front:build"
           }
         },
         "test": {
@@ -121,5 +121,5 @@
       }
     }
   },
-  "defaultProject": "finanzas-personales"
+  "defaultProject": "servicios-notifications-front"
 }

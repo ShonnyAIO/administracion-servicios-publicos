@@ -1,21 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FinanzasComponent } from './finanzas.component';
-import { FinanzasRoutingModule } from './finanzas-routing.module';
 import { SharedModule } from "../shared/shared.module";
 import { MaterialModule } from 'src/app/material/material.module';
-import { ListadoMontosComponent } from '../listado-montos/listado-montos.component';
+import { HomeComponent } from './home.component';
+import { HomeRoutingModule } from './home-routing.module';
 
 @NgModule({
     declarations: [
-        FinanzasComponent,
-        ListadoMontosComponent
+        HomeComponent,
     ],
     imports: [
         CommonModule,
-        FinanzasRoutingModule,
+        HomeRoutingModule,
         SharedModule,
         MaterialModule
     ]
 })
-export class FinanzasModule { }
+export class HomeModule { }
